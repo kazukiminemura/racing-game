@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <div class="hud-item">
+                <span class="hud-label">Speed:</span>
+                <span id="speed" class="hud-value">0</span>
+                <span class="hud-unit">km/h</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">Lap:</span>
+                <span id="lap" class="hud-value">1</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">Time:</span>
+                <span id="time" class="hud-value">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="restartBtn" class="restart-btn">🔄 Restart</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
